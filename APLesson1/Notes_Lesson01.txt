@@ -1,0 +1,7 @@
+Lesson 1
+- All parts of a code is defined in a class, and classes can be branched into functions to execute certain actions
+- Functions have keywords that designate their functions
+- Objects are sorted into strings, integers, booleans, etc.
+- The system object can preform functions as well, in this case displaying strings
+- ASCII Art
+
