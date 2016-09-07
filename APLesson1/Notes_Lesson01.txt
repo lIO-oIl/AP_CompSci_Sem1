@@ -3,5 +3,10 @@ Lesson 1
 - Functions have keywords that designate their functions
 - Objects are sorted into strings, integers, booleans, etc.
 - The system object can preform functions as well, in this case displaying strings
+- Escape characters can be used inside strings to modify the string's content (positioning)
 - ASCII Art
 
+^.|.^      /
+/==/\_____/
+   /\___/\\
+  // \ // \\
