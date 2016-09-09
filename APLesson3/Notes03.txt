@@ -1,0 +1,19 @@
+- Variables should be easily distinguishable and unique. Should describe what it is supposed to represent
+- You can import in premade packages into your code to open up to more functions (without coding it yourself)
+- A "*" should be used to imply that the previous object is a package
+- A ";" chould be used to imply that the previous object is a singular class
+- You can use "." to locate specific class objects from a package
+- Importing the Scanner class (for inputs) goes as follows: "import java.util.Scanner;"
+- Parse: to scan blocks of data and return their values
+- Scanners can be used as objects, such as including a text input object. "Scanner keyboard = new Scanner(System.in)
+- "System.in" allows the system to read text typed into the keyboard
+- To prompt, we will want to use a simple println function. "System.out.println("Prompt goes here");"
+- Following a prompt, we want to set up a user input, looking for ints, strings, etc. "int num = keyboard.nextInt();"
+- nextInt(): returns the next int value in the input
+- nextDouble(): returns the next double value in the input
+- nextFloat(): returns the next float value in the input
+- nextLong(): returns the next long value in the input
+- nextByte(): returns the next byte value in the input
+- nextShort(): returns the next short value in the input
+- next(): returns the next one word string value in the input
+- nextLine(): returns the next multi-word String value in the input
