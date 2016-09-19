@@ -1,0 +1,8 @@
+- %[#]s creates a spacing that allows for indent for alignment, so long as all the lengths are within parameters
+- %[#].[#1]f allows for the spacing to be 10 characters, but also includes "#1" amount of decimal places in it
+	- If "#1" does not include all the decimal places, the excessive portions would be cut off.
+- If numbers exceeed given parameters, the printf function would not space correctly
+- For sake of formating, "public void FUNCNAME () {}" should be used to include any change of existing variables
+- Parameters are only visible to the function itself, and will work so long as the correct values were plugged in
+- You would need to make a new class in order to run varNAME.FUNCNAME(vars)
+	- ClassNAME varNAME = new ClassNAME();
