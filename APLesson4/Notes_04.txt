@@ -6,3 +6,16 @@
 - Parameters are only visible to the function itself, and will work so long as the correct values were plugged in
 - You would need to make a new class in order to run varNAME.FUNCNAME(vars)
 	- ClassNAME varNAME = new ClassNAME();
+
+- Every function is broken up into certain values, which will determine how the script is accessed or used.
+- A functions follows the structure "accessType returnType methodName(parameters) {}"
+	- accessType: public or private; it determines whether a script can be called from another class
+	- returnType: determines what is given from the output of a function (IE: void)
+		- A main type always returns a void
+	- methodName: a unique name for the function. The user should name this according to the function's behavior
+	- parameters: certain circumstances or variables that are required in order for the script to work (IE String[]args); may serve as a placeholder
+	- static: an additional return type that allows a method to run without the need of an object
+		- main function is required for it to run
+- ret (Return) values can be set to send something back to the caller from the script
+
+
