@@ -29,7 +29,7 @@ public class Ex_03
 	
 	public double calculateMn(double p, double r, double n, double t)
 	{
-		return (p * Math.pow((1+r/n),(n*t)) - p)/ (n * t);
+		return (p * Math.pow((1+r/n),(n*t)) - p)/ 12 / t;
 	}
 	
 	public double calculateAmt(double p, double r, double n, double t)
