@@ -13,12 +13,12 @@ public class Lab02
 		String City = "San Diego";
 		String Zip = "92130";
 		
-		System.out.println("\n"+"Name: \t" + name + "\nAddress: " + Address + "\nCity: \t" + City + "\nZip: \t" + Zip);
+		System.out.println("\n"+"Name: \t" + name + "\nAddress: \t" + Address + "\nCity: \t" + City + "\nZip: \t\t" + Zip);
 		
 		int length = 2;
 		int width = 3;
 		int height = 4;
 		
-		System.out.println("\n"+"The surface area of your rectangle is " + (2 * length * width) + (2 * height * length) + (2 * height * width);
+		System.out.println("\n"+"The surface area of your rectangle is " + (2 * length * width) + (2 * height * length) + (2 * height * width));
 	}
 }
