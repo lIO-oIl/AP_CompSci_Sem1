@@ -11,7 +11,7 @@ public class Ex02 {
 		System.out.println("\nWhat is your height, in feet?");
 		int height = keyboard.nextInt();
 		
-		double BMI = weight*703/(height*12)^2;
+		double BMI = weight*703/Math.pow((height*12),2);
 		
 		System.out.println("\nYour BMI is: " + BMI);
 	}
