@@ -2,6 +2,9 @@ import java.util.Scanner;
 
 public class Rectangle
 {
+	static double length;
+	static double width;
+	
 	public static void main (String[]args)
 	{
 		Rectangle Class = new Rectangle();
@@ -9,17 +12,17 @@ public class Rectangle
 		Scanner input = new Scanner(System.in);
 		
 		System.out.println("What is your length?");
-		double length = input.nextDouble();
+		length = input.nextDouble();
 		
 		System.out.println("What is your width?");
-		double width = input.nextDouble();
+		width = input.nextDouble();
 		
-		print(Class.calcPerim(length, width));
+		print(Class.calcPerim());
 	}
 	
-	public double calcPerim(double l, double w)
+	public double calcPerim()
 	{
-		return (2 * l + 2 * w);
+		return (2 * length + 2 * width);
 	}
 	
 	public static void print (double answer){
