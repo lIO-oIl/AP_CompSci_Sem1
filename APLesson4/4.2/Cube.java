@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Cube
 {
 	static double side;
+	static double answer;
 	
 	public static void main (String[]args)
 	{
@@ -13,16 +14,16 @@ public class Cube
 		System.out.println("What is your side length?");
 		side = input.nextDouble();
 		
-		print(Class.calcPerim());
+		print();
 		
 	}
 	
-	public double calcPerim()
+	public static void calcPerim()
 	{
-		return Math.pow(side,2)*6;
+		answer = Math.pow(side,2)*6;
 	}
 	
-	public static void print(double answer)
+	public static void print()
 	{
 		System.out.printf("The surface area of a cube with " + side + " sides is %.5f",answer);
 	}

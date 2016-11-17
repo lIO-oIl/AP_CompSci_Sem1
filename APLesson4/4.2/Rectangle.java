@@ -4,6 +4,7 @@ public class Rectangle
 {
 	static double length;
 	static double width;
+	static double answer;
 	
 	public static void main (String[]args)
 	{
@@ -17,15 +18,17 @@ public class Rectangle
 		System.out.println("What is your width?");
 		width = input.nextDouble();
 		
-		print(Class.calcPerim());
+		calcPerim();
+		print();
 	}
 	
-	public double calcPerim()
+	public static void calcPerim()
 	{
-		return (2 * length + 2 * width);
+		answer = 2 * length + 2 * width;
 	}
 	
-	public static void print (double answer){
+	public static void print ()
+	{
 		
 		System.out.printf("Your rectangle is %.3f%s", answer, " ft around");
 	}

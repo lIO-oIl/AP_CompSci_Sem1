@@ -5,6 +5,7 @@ public class Average
 	static double n1;
 	static double n2;
 	static double n3;
+	static double answer;
 	
 	public static void main (String[]args)
 	{
@@ -21,15 +22,15 @@ public class Average
 		System.out.println("What is your third number?");
 		n3 = input.nextDouble();
 		
-		print(Class.calcAvg());
+		print();
 	}
 	
-	public double calcAvg()
+	public void calcAvg()
 	{
-		return (n1 + n2 + n3)/3;
+		answer = (n1 + n2 + n3)/3;
 	}
 	
-	public static void print(double answer)
+	public static void print()
 	{
 		System.out.printf("The average of " + n1 + ", " + n2 + ", and " + n3 + " is " +"%.5f",answer);
 	}
