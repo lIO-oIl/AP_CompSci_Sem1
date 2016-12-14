@@ -8,10 +8,13 @@ public class Ex05
 		
 		String answer = "";
 		
-		System.out.println("Select your number: ");
+		System.out.println("Select your start number: ");
+		int start = input.nextInt();
+		
+		System.out.println("Select your end number: ");
 		int num = input.nextInt();
 		
-		for(int i = 0; i <= num ; i++)
+		for(int i = start; i <= num ; i++)
 		{
 			if(i % 2 == 0)
 			{
