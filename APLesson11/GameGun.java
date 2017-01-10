@@ -8,7 +8,7 @@ public class GameGun
 	static int shotCount = 0;
 	static String[] clip;
 	static String[] shooting = {"Engaging fire!", "Pulling Trigger!", "Firing!", "Enemy Spotted!", "Attacking!", "BOOM!", "Shots Fired!", "Roger That!", "I Copy You!"};
-	static String[] ooa = {"Need to Reload!", "I'm Out of Ammo!", "I Need More Ammo!", "My Clip is Empty!", "I Have to Reload!", "Roger That!", "I Copy You!"};
+	static String[] ooa = {"Need to Reload!", "I'm Out of Ammo!", "I Need More Ammo!", "My Clip is Empty!", "I Have to Reload!"};
 	static String[] reloading = {"Reloading!", "On it!", "Replacing Clip!", "Lock and Load!", "Roger That!", "I Copy You!"};
 	static Random rand = new Random();
 	
@@ -110,7 +110,4 @@ public class GameGun
 		}
 		return output;
 	}
-	
-	static int player = 100;
-	static int opponent = 100;
 }
