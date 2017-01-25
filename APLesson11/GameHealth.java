@@ -27,6 +27,7 @@ public class GameHealth
 			System.out.println(takeDamage(damage, amount));
 			printClip();
 		}
+		System.out.println("\nYou Died.");
 	}
 	
 	public static String takeDamage(int dmg, int amt)

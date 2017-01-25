@@ -16,8 +16,9 @@ public class Ex04{
 			for(int j = 0; j < nums[i].length; j++)
 			{
 				nums[i][j] = random.nextInt(100) + 1;
-				System.out.println(nums[i][j] + "\t");
+				System.out.print(nums[i][j] + "\t");
 			}
+			System.out.println();
 		}
 		
 		System.out.println("Enter your divisor: ");

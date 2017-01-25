@@ -21,8 +21,9 @@ public class Ex01{
 		{
 			for(int j = 0; j < nums[i].length; j++)
 			{
-				System.out.println(nums[i][j] + "\n");
+				System.out.print(nums[i][j] + "\t");
 			}
+			System.out.println();
 		}
 	}
 }

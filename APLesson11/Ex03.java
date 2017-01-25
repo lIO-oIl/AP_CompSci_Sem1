@@ -18,8 +18,9 @@ public class Ex03{
 					xo[i][j] = "x";
 				else
 					xo[i][j] = "o";
-				System.out.println(xo[i][j] + "\t");
+				System.out.print(xo[i][j] + "\t");
 			}
+			System.out.println();
 		}
 	}
 }

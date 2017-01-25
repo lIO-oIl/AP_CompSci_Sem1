@@ -66,7 +66,9 @@ public class GameGun
 	{
 		if(bulletCount >= clipSize)
 		{
-			bulletCount -= clipSize - shotCount;
+			/*bulletCount -= clipSize - shotCount;
+			shotCount = clipSize;*/
+			bulletCount -= clipSize;
 			shotCount = clipSize;
 		}
 		else

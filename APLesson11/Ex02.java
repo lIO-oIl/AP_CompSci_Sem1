@@ -21,8 +21,9 @@ public class Ex02{
 		{
 			for(int j = 0; j < words[i].length; j++)
 			{
-				System.out.println(words[i][j] + "\n");
+				System.out.print(words[i][j] + "\t");
 			}
+			System.out.println();
 		}
 	}
 }
