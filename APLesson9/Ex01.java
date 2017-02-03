@@ -17,12 +17,19 @@ public class Ex01
 			list[i] = input.next();
 		}
 		
+		System.out.println("In Order");
+		
 		for(String word : list)
 		{
-			System.out.println("\n" + word);
-			System.out.println(reverse(word));
+			System.out.print(word + " ");
 		}
 		
+		System.out.println("\n\nReversed");
+		
+		for(String word : list)
+		{
+			System.out.print(reverse(word) + " ");
+		}
 	}
 	
 	public static String reverse(String word)
