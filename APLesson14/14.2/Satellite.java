@@ -23,8 +23,8 @@ public class Satellite
 	   
 	    for (Location l : locate)
        {
-			double x = (double) (Math.random() * 100) + 1;
-			double y = (double) (Math.random() * 100) + 1;
+			double x = (double) (Math.random() * 100.00) + 1;
+			double y = (double) (Math.random() * 100.00) + 1;
 			l.move(x, y);
 			
 			printout += "\nAfter " + l.getID() + " Moved (" + x + "," + y + ")";

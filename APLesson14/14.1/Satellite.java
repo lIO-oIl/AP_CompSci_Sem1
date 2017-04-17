@@ -25,7 +25,7 @@ public class Satellite
        {
 			double x = (double) (Math.random() * 100.00) + 1;
 			double y = (double) (Math.random() * 100.00) + 1;
-			(Car)l.move(x, y);
+			((Car)l).move(x, y);
 			
 			printout += "\nAfter " + l.getID() + " Moved (" + x + "," + y + ")";
 	   }
