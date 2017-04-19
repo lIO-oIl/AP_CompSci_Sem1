@@ -9,6 +9,7 @@ public abstract class Ticket
 	
 	public int getSerialNo()
 	{
+		serialNo = (int)(Math.random() * 10000000) + 1;
 		return serialNo;
 	}
 	
