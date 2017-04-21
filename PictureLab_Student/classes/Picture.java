@@ -118,6 +118,57 @@ public class Picture extends SimplePicture
     } 
   }
   
+  public void mirrorVerticalRightToLeft()
+  {
+    Pixel[][] pixels = this.getPixels2D();
+    Pixel leftPixel = null;
+    Pixel rightPixel = null;
+    int width = pixels[0].length;
+    for (int row = pixels.length-1; row >= 0; row--)
+    {
+      for (int col = 0; col < width / 2; col++)
+      {
+        leftPixel = pixels[row][col];
+        rightPixel = pixels[row][width - 1 - col];
+        rightPixel.setColor(leftPixel.getColor());
+      }
+    } 
+  }
+  
+  public void mirrorHorizontal()
+  {
+    Pixel[][] pixels = this.getPixels2D();
+    Pixel topPixel = null;
+    Pixel botPixel = null;
+    int height = pixels[0].length;
+    for (int col = 0; col < pixels.length; col++)
+    {
+      for (int row = 0; row < height / 2; row++)
+      {
+        topPixel = pixels[row][col];
+        botPixel = pixels[height - 1 - row][col];
+        botPixel.setColor(topPixel.getColor());
+      }
+    } 
+  }
+  
+  public void mirrorBotToTop()
+  {
+    Pixel[][] pixels = this.getPixels2D();
+    Pixel topPixel = null;
+    Pixel botPixel = null;
+    int height = pixels[0].length;
+    for (int col = 0; col < pixels.length; col++)
+    {
+      for (int row = 0; row < height / 2; row++)
+      {
+        topPixel = pixels[row][col];
+        botPixel = pixels[height - 1 - row][col];
+        botPixel.setColor(topPixel.getColor());
+      }
+    } 
+  }
+  
   /** Mirror just part of a picture of a temple */
   public void mirrorTemple()
   {

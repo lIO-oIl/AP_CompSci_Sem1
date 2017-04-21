@@ -81,6 +81,27 @@ public class PictureTester
     fish.explore();
   }
   
+  public static void testMirrorVerticalRightToLeft()
+  {
+    Picture saw = new Picture("smallerSaw.jpg");
+    saw.mirrorVerticalRightToLeft();
+    saw.explore();
+  }
+  
+  public static void testMirrorHorizontal()
+  {
+    Picture mot = new Picture("smallerSaw.jpg");
+    mot.mirrorHorizontal();
+    mot.explore();
+  }
+  
+  public static void testMirrorBotToTop()
+  {
+    Picture saw = new Picture("smallerSaw.jpg");
+    saw.mirrorBotToTop();
+    saw.explore();
+  }
+  
   /** Main method for testing.  Every class can have a main
     * method in Java */
   public static void main(String[] args)
@@ -96,10 +117,13 @@ public class PictureTester
     testGrayscale();
     testFixUnderwater();
     testMirrorVertical();
+	testMirrorHorizontal();
     testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
+	testMirrorVerticalRightToLeft();
+	testMirrorBotToTop();
     testCollage();
     //testCopy();
     testEdgeDetection();
