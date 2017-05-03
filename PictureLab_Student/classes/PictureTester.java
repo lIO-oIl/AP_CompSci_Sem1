@@ -51,6 +51,13 @@ public class PictureTester
     swan.explore();
   }
   
+    public static void testEdgeDetection2()
+  {
+    Picture swan = new Picture("swan.jpg");
+    swan.edgeDetection2(10);
+    swan.explore();
+  }
+  
   public static void testKeepOnlyBlue()
   {
     Picture saw = new Picture("smallerSaw.jpg");
@@ -90,14 +97,14 @@ public class PictureTester
   
   public static void testMirrorHorizontal()
   {
-    Picture mot = new Picture("smallerSaw.jpg");
+    Picture mot = new Picture("redMotorcycle.jpg");
     mot.mirrorHorizontal();
     mot.explore();
   }
   
   public static void testMirrorBotToTop()
   {
-    Picture saw = new Picture("smallerSaw.jpg");
+    Picture saw = new Picture("redMotorcycle.jpg");
     saw.mirrorBotToTop();
     saw.explore();
   }
@@ -109,25 +116,25 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
-    testZeroBlue();
-    testKeepOnlyBlue();
+    //testZeroBlue();
+    //testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
-    testNegate();
-    testGrayscale();
-    testFixUnderwater();
-    testMirrorVertical();
-	testMirrorHorizontal();
-    testMirrorTemple();
+    //testNegate();
+    //testGrayscale();
+    //testFixUnderwater();
+    //testMirrorVertical();
+	//testMirrorHorizontal();
+    //testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
-	testMirrorVerticalRightToLeft();
-	testMirrorBotToTop();
-    testCollage();
+	//testMirrorVerticalRightToLeft();
+	//testMirrorBotToTop();
+    //testCollage();
     //testCopy();
     testEdgeDetection();
-    //testEdgeDetection2();
+    testEdgeDetection2();
     //testChromakey();
     //testEncodeAndDecode();
     //testGetCountRedOverValue(250);
