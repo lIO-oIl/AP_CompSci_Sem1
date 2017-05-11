@@ -17,7 +17,7 @@ public class Shuffler {
 	public static void main(String[] args) {
 		System.out.println("Results of " + SHUFFLE_COUNT +
 								 " consecutive perfect shuffles:");
-		int[] values1 = {0, 1, 2, 3};
+		int[] values1 = {0, 1, 2, 3, 4, 5};
 		for (int j = 1; j <= SHUFFLE_COUNT; j++) {
 			perfectShuffle(values1);
 			System.out.print("  " + j + ":");
@@ -51,6 +51,21 @@ public class Shuffler {
 	 */
 	public static void perfectShuffle(int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
+		int[] newDeck = new int[values.length];
+		for(int x = 0; x < values.length / 2; x++)
+		{
+			for(int i = 0; i < values.length; i++)
+			{
+				if(i % 2 == 0)
+					newDeck[i] = values[x];
+				else
+					newDeck[i] = values[values.length / 2 + x];
+			}
+		}
+		for(int cards : newDeck)
+		{
+			values[cards] = newDeck[cards];
+		}
 	}
 
 	/**
