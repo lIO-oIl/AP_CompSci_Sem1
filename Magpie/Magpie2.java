@@ -21,12 +21,14 @@ public class Magpie2
 		 * 	if you enter nothing, or if you accidentally hit
 		 * 	enter. Think to yourself: "What is the length of
 		 * 	an empty String?" */
-
-
+		if(statement.length() == 0)
+		{
+			response = "Say something please";
+		}
 		/** To be completed in Exercise_02:
 		 * 	Modify the following code to use the findKeyword
 		 * 	Method (details in "Exercise_02" below. */
-		if (findKeyword(statement, "no") >= 0)
+		else if (findKeyword(statement, "no") >= 0)
 		{
 			response = "Why so negative?";
 		}
@@ -159,7 +161,7 @@ public class Magpie2
 	   
 	   if (lastChar.equals("."))
 	   {
-		   statement = statement.substring(0, statement.length()-2);
+		   statement = statement.substring(0, statement.length()-1);
 	   }
 	   
 	   int psnYou = findKeyword(statement, "you");
@@ -196,7 +198,7 @@ public class Magpie2
 	   
 	   if (lastChar.equals("."))
 	   {
-		   statement = statement.substring(0, statement.length()-2);
+		   statement = statement.substring(0, statement.length()-1);
 	   }
 	   
 	   int psnYou = findKeyword(statement, "you");
