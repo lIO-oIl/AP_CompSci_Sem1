@@ -52,19 +52,17 @@ public class Shuffler {
 	public static void perfectShuffle(int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
 		int[] newDeck = new int[values.length];
+		int[] first = new int[values.length/2];
+		int[] second = new int[values.length/2];
 		for(int x = 0; x < values.length / 2; x++)
 		{
-			for(int i = 0; i < values.length; i++)
-			{
-				if(i % 2 == 0)
-					newDeck[i] = values[x];
-				else
-					newDeck[i] = values[values.length / 2 + x];
-			}
+			first[x] = values[x];
+			second[x] = values[values.length/2 + x];
 		}
-		for(int cards : newDeck)
+		for(int i = 0; i < values.length / 2; i++)
 		{
-			values[cards] = newDeck[cards];
+			values[i * 2] = first[i];
+			values[i * 2 + 1] = second[i];
 		}
 	}
 
@@ -81,5 +79,11 @@ public class Shuffler {
 	 */
 	public static void selectionShuffle(int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
+		for( int i = values.length - 1; i >= 0; i-- ) {
+            int pull = (int)(Math.random() * i);
+            int card = values[pull];
+            values[pull] = values[i];
+            values[i] = card;
+        }
 	}
 }

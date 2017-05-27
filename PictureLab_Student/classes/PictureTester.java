@@ -109,6 +109,23 @@ public class PictureTester
     saw.explore();
   }
   
+  public static void testCopy()
+  {
+    Picture saw = new Picture("smallerSaw.jpg");
+	Picture motor = new Picture("redMotorcycle.jpg");
+    saw.copy2(motor, 10, 200, 10, 200);
+    saw.explore();
+  }
+  
+  public static void testMyCollage()
+  {
+	Picture swan = new Picture("swan.jpg");
+    Picture saw = new Picture("smallerSaw.jpg");
+	Picture motor = new Picture("redMotorcycle.jpg");
+	Picture myCollage = new Picture("myCollage.jpg");
+	myCollage.createMyCollage(swan, saw, motor);
+	myCollage.explore();
+  }
   /** Main method for testing.  Every class can have a main
     * method in Java */
   public static void main(String[] args)
@@ -133,13 +150,14 @@ public class PictureTester
 	//testMirrorBotToTop();
     //testCollage();
     //testCopy();
-    testEdgeDetection();
-    testEdgeDetection2();
+    //testEdgeDetection();
+    //testEdgeDetection2();
     //testChromakey();
     //testEncodeAndDecode();
     //testGetCountRedOverValue(250);
     //testSetRedToHalfValueInTopHalf();
     //testClearBlueOverValue(200);
     //testGetAverageForColumn(0);
+	//testMyCollage();
   }
 }

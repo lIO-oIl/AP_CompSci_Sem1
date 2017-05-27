@@ -247,7 +247,7 @@ public class Magpie2
 		String phrase = statement.trim().toLowerCase();
 		int psn = startPos;
 		
-		if(psn >= 0)
+		while(psn >= 0)
 		{
 			String before = "", after = "";
 			if(phrase.length() == goal.length() && phrase.indexOf(goal) == 0)
@@ -262,7 +262,7 @@ public class Magpie2
 					before = phrase.substring(psn-1, psn);
 				}
 				
-				if(phrase.length() - psn > goal.length())
+				if(psn + goal.length() < phrase.length())
 				{
 					after = phrase.substring(psn + goal.length(), psn + goal.length() + 1);
 				}
@@ -272,8 +272,10 @@ public class Magpie2
 					return psn;
 				}
 				else
-					return -1;
+					return findKeyword(phrase.substring(phrase.indexOf(goal) + goal.length()), goal);
 			}
+			else
+				return -1;
 		}
 		return -1;
 
