@@ -16,16 +16,23 @@ public class CardTester {
 		JoS.suit();
 		JoS.rank();
 		JoS.pointValue();
-		JoS.matches(JoS2);
+		if(JoS.matches(JoS2))
+			System.out.println("matches");
 		
 		JoS2.suit();
 		JoS2.rank();
 		JoS2.pointValue();
-		JoS2.matches(QoS);
+		if(JoS2.matches(QoS))
+			System.out.println("matches");
+		else
+			System.out.println("doesnt match");
 		
 		QoS.suit();
 		QoS.rank();
 		QoS.pointValue();
-		QoS.matches(JoS);
+		if(QoS.matches(JoS))
+			System.out.println("matches");
+		else
+			System.out.println("doesnt match");
 	}
 }
